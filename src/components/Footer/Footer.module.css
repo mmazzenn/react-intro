@@ -1,0 +1,23 @@
+.mainFooter {
+  padding: 100px 0;
+  background-color: var(--secondary-color);
+}
+
+.mainFooter h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.socialLinks li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+}
+
+.copyright {
+  background-color: #1a252f;
+}

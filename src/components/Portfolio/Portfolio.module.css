@@ -1,0 +1,22 @@
+.portfolioStar {
+  width: 30%;
+}
+
+.portfolioStar i {
+  color: var(--secondary-color);
+}
+
+.portfolioStar span::before,
+.portfolioStar span::after {
+  background-color: var(--secondary-color) !important;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  background-color: #1abc9ce6;
+  opacity: 0;
+  transition: opacity 600ms;
+}

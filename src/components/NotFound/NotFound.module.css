@@ -1,0 +1,20 @@
+.error {
+  width: 30%;
+}
+
+.error i {
+  color: var(--secondary-color);
+}
+
+.error span::before {
+  left: 25%;
+}
+
+.error span::after {
+  right: 25%;
+}
+
+.error span::before,
+.error span::after {
+  background-color: var(--secondary-color) !important;
+}

@@ -1,0 +1,4 @@
+.mainNav {
+  background-color: var(--secondary-color);
+  transition: all 500ms;
+}

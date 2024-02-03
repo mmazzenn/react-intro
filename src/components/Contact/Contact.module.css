@@ -1,0 +1,31 @@
+.contact label {
+  left: 5px;
+  top: 40px;
+  transition: top 500ms;
+  color: var(--main-color);
+}
+
+.transformLabel {
+  top: 0px !important;
+}
+
+.contact input:focus {
+  box-shadow: none;
+}
+
+.contactStar {
+  width: 30%;
+}
+
+.contactStar i {
+  color: var(--secondary-color);
+}
+
+.contactStar span::before,
+.contactStar span::after {
+  background-color: var(--secondary-color) !important;
+}
+
+.messageBtn {
+  background-color: var(--main-color) !important;
+}
