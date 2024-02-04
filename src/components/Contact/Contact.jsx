@@ -34,7 +34,7 @@ const Contact = () => {
         <div className={`star-shape ${style.contactStar} mb-4 mx-auto text-center`}>
           <span><i className='fa-solid fa-star'></i></span>
         </div>
-        <form action="" className='w-50 p-3 mx-auto mt-5'>
+        <form action="" className={`${style.formBox} p-3 mx-auto mt-5`}>
           <label htmlFor="userName" className={`position-relative ${labelPos.userName}`}>User Name:</label>
           <input value={userName} id="userName" type="text" placeholder="UserName" name="userName" className="form-control border-0 border-bottom py-3 position-relative" onChange={(e) => setUserName(e.target.value)} />
           <label htmlFor="userAge" className={`position-relative ${labelPos.userAge}`}>User Age:</label>

@@ -10,13 +10,15 @@
 
 .star-shape {
   position: relative;
+  width: 220px;
+  margin: auto;
 }
 
 .star-shape span::before {
   content: '';
   position: absolute;
   top: 50%;
-  left: 22%;
+  left: 0;
   width: 80px;
   height: 4px;
   background-color: #FFF;
@@ -26,7 +28,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: 22%;
+  right: 0;
   width: 80px;
   height: 4px;
   background-color: #FFF;
@@ -34,4 +36,16 @@
 
 a.active {
   background-color: var(--main-color) !important;
+}
+
+@media screen and (max-width: 250px) {
+
+  .star-shape {
+    width: 100px;
+  }
+
+  .star-shape span::before,
+  .star-shape span::after {
+    width: 30px;
+  }
 }

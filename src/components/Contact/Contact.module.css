@@ -13,10 +13,6 @@
   box-shadow: none;
 }
 
-.contactStar {
-  width: 30%;
-}
-
 .contactStar i {
   color: var(--secondary-color);
 }
@@ -28,4 +24,14 @@
 
 .messageBtn {
   background-color: var(--main-color) !important;
+}
+
+.formBox {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .formBox {
+    width: 80%;
+  }
 }

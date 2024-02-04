@@ -29,16 +29,16 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item me-3">
-              <NavLink to={""} className={`nav-link text-white text-uppercase fw-bold rounded-3 ${isHomePage ? "active" : ""}`}>Home</NavLink>
+              <NavLink to={""} className={`nav-link ps-3 ps-lg-2 text-white text-uppercase fw-bold rounded-3 ${isHomePage ? "active" : ""}`}>Home</NavLink>
             </li>
             <li className="nav-item me-3">
-              <NavLink to={"about"} className="nav-link text-white text-uppercase fw-bold rounded-3">About</NavLink>
+              <NavLink to={"about"} className="nav-link ps-3 ps-lg-2 text-white text-uppercase fw-bold rounded-3">About</NavLink>
             </li>
             <li className="nav-item me-3">
-              <NavLink to={"portfolio"} className="nav-link text-white text-uppercase fw-bold rounded-3">Portfolio</NavLink>
+              <NavLink to={"portfolio"} className="nav-link ps-3 ps-lg-2 text-white text-uppercase fw-bold rounded-3">Portfolio</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to={"contact"} className="nav-link text-white text-uppercase fw-bold rounded-3">Contact</NavLink>
+              <NavLink to={"contact"} className="nav-link ps-3 ps-lg-2 text-white text-uppercase fw-bold rounded-3">Contact</NavLink>
             </li>
           </ul>
         </div>
