@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import "./Shared/Shared.css"
 import Home from "./components/Home/Home"
@@ -8,8 +8,8 @@ import Contact from "./components/Contact/Contact"
 import NotFound from "./components/NotFound/NotFound";
 
 function App() {
-  let routes = createBrowserRouter([
-    {path: "/", element: <Layout/>, children: [
+  let routes = createHashRouter([
+    {path: "", element: <Layout/>, children: [
       {index: true, element: <Home/>},
       {path: "home", element: <Home/>},
       {path: "about", element: <About/>},

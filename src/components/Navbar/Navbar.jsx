@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import style from "./Navbar.module.css";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
   let [navPadd, setNavPadd] = useState("py-4");
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 30) {
@@ -14,6 +16,9 @@ const Navbar = () => {
     };
     window.addEventListener('scroll', handleScroll);
   }, []);
+
+  const isHomePage = location.pathname === "" || location.pathname === "/home";
+
   return (
     <nav className={`${style.mainNav} navbar navbar-expand-lg fixed-top ${navPadd}`}>
       <div className="container">
@@ -24,7 +29,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item me-3">
-              <NavLink to={""}  className="nav-link text-white text-uppercase fw-bold rounded-3">Home</NavLink>
+              <NavLink to={""} className={`nav-link text-white text-uppercase fw-bold rounded-3 ${isHomePage ? "active" : ""}`}>Home</NavLink>
             </li>
             <li className="nav-item me-3">
               <NavLink to={"about"} className="nav-link text-white text-uppercase fw-bold rounded-3">About</NavLink>
